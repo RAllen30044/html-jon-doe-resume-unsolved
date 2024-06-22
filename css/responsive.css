@@ -1,0 +1,34 @@
+@media screen and (max-width: 1090px) {
+  .main-container {
+    flex-wrap: wrap;
+  }
+  .fancy-body .dark-part {
+    min-width: 100%;
+  }
+  .light-part p,
+  .light-part ol,
+  .light-part ul,
+  .light-part h2 {
+    margin-left: 10px;
+  }
+  .fancy-body .light-part h1 {
+    justify-content: center;
+  }
+  .fancy-body .light-part #candidate-desired-role {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .fancy-body .light-part h1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fancy-body {
+    padding: 0;
+  }
+  .fancy-body .main-container {
+    border-radius: 0;
+  }
+}

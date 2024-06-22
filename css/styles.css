@@ -7,9 +7,8 @@
 
 .fancy-body {
   padding: 60px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgba(51, 60, 77, 1);
-
 }
 
 .fancy-body .main-container {
@@ -75,7 +74,7 @@
 }
 
 .fancy-body .dark-part .contacts-table a:after {
-  content: '\2750';
+  content: "\2750";
 }
 
 .fancy-body .light-part h1 {
@@ -100,7 +99,8 @@
 
 .fancy-body .bio-container,
 .fancy-body .skills-container,
-.fancy-body .hobbies-container {
+.fancy-body .hobbies-container,
+.fancy-body .projects-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -109,7 +109,8 @@
 
 .fancy-body .bio-container h2,
 .fancy-body .skills-container h2,
-.fancy-body .hobbies-container h2 {
+.fancy-body .hobbies-container h2,
+.fancy-body .projects-container h2 {
   display: flex;
   gap: 30px;
   align-items: center;
@@ -117,14 +118,16 @@
 
 .fancy-body .bio-container h2 span,
 .fancy-body .skills-container h2 span,
-.fancy-body .hobbies-container h2 span {
+.fancy-body .hobbies-container h2 span,
+.fancy-body .projects-container h2 span {
   min-width: max-content;
 }
 
 .fancy-body .bio-container h2:after,
 .fancy-body .skills-container h2:after,
-.fancy-body .hobbies-container h2:after {
-  content: '';
+.fancy-body .hobbies-container h2:after,
+.fancy-body .projects-container h2:after {
+  content: "";
   height: 1px;
   background-color: rgba(51, 60, 77, 0.3);
   width: 100%;
@@ -136,4 +139,23 @@
 
 .fancy-body .hobbies-container ul {
   padding-left: 15px;
+}
+#projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+}
+
+.project-container {
+  width: 200px;
+  min-height: 200px;
+}
+.project-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.project-container img:hover {
+border: 2px solid  rgba(51, 60, 77, 0.3)
 }
